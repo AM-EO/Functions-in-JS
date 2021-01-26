@@ -8,7 +8,7 @@
     <script src="./Interactive abstract/index.js"></script>
 </head>
 
-<body>
+<body onload="main()">
     <div class="container">
         <div class="post">
             <div class="post-header">
@@ -29,106 +29,141 @@
                     <img src="./Interactive abstract/img/2.PNG">
                 </div>
                 <p>О чем мы сегодня будем говорить:</p>
-                    <p> Начнем с того, зачем нам функции</p>
-                    <p>Далее разберемся в Синтаксисе</p>
-                    <p>Напишем наши первые простые функции, где потрогаем некоторые тонкости</p>
-                    <p>А на десерт – напишем простую игру, красивый симулятор Жизни</p>
-                    <p>В конце – подведем итоги всего занятия, и я предложу интересные ссылки для саморазвития
+                <p> Начнем с того, зачем нам функции</p>
+                <p>Далее разберемся в Синтаксисе</p>
+                <p>Напишем наши первые простые функции, где потрогаем некоторые тонкости</p>
+                <p>А на десерт – напишем простую игру, красивый симулятор Жизни</p>
+                <p>В конце – подведем итоги всего занятия, и я предложу интересные ссылки для саморазвития
                 </p>
                 <div class="post-image">
                     <img src="./Interactive abstract/img/3.PNG">
-                </div> 
+                </div>
                 <p>Перед тем, как что-то делать, я считаю, что надо подумать, а зачем нам это вообще делать.</p>
                 <p>Чтобы ответить на этот вопрос, давайте вернемся в самое начало.</p>
-                    Что такое программа?
-                    <p>Какая первая ассоциация приходит на ум, когда вы слышите Программа Код.
+                Что такое программа?
+                <p>Какая первая ассоциация приходит на ум, когда вы слышите Программа Код.
                     Если вы ответили "Алгоритм", то вы не одиноки, я думаю также.</p>
-                    <p>Давайте опишем алгоритм идеального ребенка.
+                <p>Давайте опишем алгоритм идеального ребенка.
                     Что же он делает?</p>
-                    <p>Утром его будит мама, он чистит зубки, завтракает, идет в школу и так далее…
+                <p>Утром его будит мама, он чистит зубки, завтракает, идет в школу и так далее…
                     Если мы переведем все это в код, то получим 12 блоков, которые очень похожи друг на друга.
                 </p>
                 <div class="post-image">
                     <img src="./Interactive abstract/img/4.PNG">
-                </div> 
+                </div>
                 <p>Мы нашли 3 блока, которые написали много раз в разной последовательности.
                     Что же здесь плохого?</p>
-                    <p> Если бы мы были программистом из Индии лет так 20 назад и у нас была коммерческая жилка, то все хорошо, даже замечательно.
+                <p> Если бы мы были программистом из Индии лет так 20 назад и у нас была коммерческая жилка, то все
+                    хорошо, даже замечательно.
                     Но если переводить код в коробки, то грубо говоря 3 коробки нести легче чем 12, согласитесь.
                     И понять, в какой коробке новый айфон, а в какой прошлая модель, легче.</p>
-                    <p> Для этого и существуют функции.
+                <p> Для этого и существуют функции.
                     Мы пишем код один раз и используем его, где хотим и когда хотим.
-                    </p>
-                    <div class="post-image">
-                        <img src="./Interactive abstract/img/5.PNG">
-                    </div>
-                    <p>Но какие функции бывают вообще ?
-                        Их можно разделить на встроенные (такие как alert(), раньше мы называли ее командой), пользовательские – наши, возвращающие данные и нет,  принимающие данные и не принимающие.
-                        </p>
-                        <div class="post-image">
-                            <img src="./Interactive abstract/img/6.PNG">
-                        </div>
-                        <p>Но общее у них одно, правила. </p>
-                        <p>Функции начинается с ключевого слова function, за ним идет ее имя, в скобках мы можем указать параметры, т.е. данные с которыми она должна работать, в кавычках находится ее тело. Заканчиваться оно может словом, return, которое возвещает данные, или можно обойтись без него. 
-                            </p>
-                            <p>Правила для имен такие же, как и для переменных.</p>
-                            <h1>Практика 1</h1>
-                            <p>Вот мы и узнали рецепт бабушкиного пирога, давайте теперь его испечем.</p>
-                              <p>  Напишем нашу первую функцию.</p>
-                              <p> Откроем папку First Function, а в ней найдем index.js скрипт.
-                                </p>
-                                
-                                    <div class="post-image">
-                                        <img src="./Interactive abstract/img/P1.png">
-                                    </div>
-                                    <button onclick="pr1()">Запустить первый пример</button>
-                                <div class="post-image">
-                                    <h1>
-                                        Практика 2
-                                    </h1>
-                                    <p>Это было просто и не интересно. </p>
-                                        <p>Давайте что-нибудь передадим в функцию и получим. </p>
-                                            <p>Откроем папку Second Function, а в ней найдем index.js скрипт.
-                                        </p>
-                                    <img src="./Interactive abstract/img/7.PNG">
-                                </div>  
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/8.PNG">
-                                </div>
+                </p>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/5.PNG">
+                </div>
+                <p>Но какие функции бывают вообще ?
+                    Их можно разделить на встроенные (такие как alert(), раньше мы называли ее командой),
+                    пользовательские – наши, возвращающие данные и нет, принимающие данные и не принимающие.
+                </p>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/6.PNG">
+                </div>
+                <p>Но общее у них одно, правила. </p>
+                <p>Функции начинается с ключевого слова function, за ним идет ее имя, в скобках мы можем указать
+                    параметры, т.е. данные с которыми она должна работать, в кавычках находится ее тело. Заканчиваться
+                    оно может словом, return, которое возвещает данные, или можно обойтись без него.
+                </p>
+                <p>Правила для имен такие же, как и для переменных.</p>
+                <h1>Практика 1</h1>
+                <p>Вот мы и узнали рецепт бабушкиного пирога, давайте теперь его испечем.</p>
+                <p> Напишем нашу первую функцию.</p>
+                <p> Откроем папку First Function, а в ней найдем index.js скрипт.
+                </p>
 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/9.PNG">
-                                </div>
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/10.PNG">
-                                </div>
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/11.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/12.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/13.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/14.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/15.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/16.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/17.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/18.PNG">
-                                </div> 
-                                <div class="post-image">
-                                    <img src="./Interactive abstract/img/19.PNG">
-                                </div> 
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/P1.png">
+                </div>
+                <button onclick="pr1()">Запустить первый пример</button>
+                <h1>
+                    Практика 2
+                </h1>
+                <p>Это было просто и не интересно. </p>
+                <p>Давайте что-нибудь передадим в функцию и получим. </p>
+                <p>Откроем папку Second Function, а в ней найдем index.js скрипт.
+                </p>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/P2.png">
+                </div>
+                <button onclick="pr2()">Запустить второй пример</button>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/7.PNG">
+                </div>
+
+                <p>Это тоже было не сложно.
+                    Из первого примера мы поняли, что можем вызывать функцию в функции.
+                    И хорошо, когда это другая функция, а что если функция вызовет сама себя ?!</p>
+                <p> Это называется рекурсией.
+                </p>
+                <p>Мы можем написать функцию несколькими способами.</p>
+
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/7.PNG">
+                </div>
+                <h1>
+                    Практика 3
+                </h1>
+                <p>Напишем свою рекурсию и посмотрим, чем это закончиться, чувствую ошибками…
+                    Откроем папку Recursion, а в ней найдем index.js скрипт.
+                    Что такое факториал ?
+                </p>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/8.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/P31.png">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/P32.png">
+                </div>
+                <button onclick="pr3()">Запустить третий пример</button>
+
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/9.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/10.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/11.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/12.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/13.PNG">
+                </div>
+                
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/14.PNG">
+                </div>
+                <canvas id="plot" width="900" height="700"></canvas>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/15.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/16.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/17.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/18.PNG">
+                </div>
+                <div class="post-image">
+                    <img src="./Interactive abstract/img/19.PNG">
+                </div>
             </div>
         </div>
     </div>
